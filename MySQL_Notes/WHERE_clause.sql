@@ -47,3 +47,12 @@ WHERE first_name LIKE 'a___';			# name startig with 'a' and having 3 characters 
 
 SELECT * FROM employee_demographics
 WHERE first_name LIKE 'a___%';  		# name startig with 'a' and having 3 characters and then may or may not have anything after
+
+SELECT * FROM employee_demographics
+WHERE birth_date LIKE '%98%';			# works for dates too
+
+SELECT * FROM employee_demographics
+WHERE birth_date LIKE '1988%';
+
+SELECT * FROM employee_demographics
+WHERE birth_date LIKE '198_%';  
